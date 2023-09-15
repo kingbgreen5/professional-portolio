@@ -1,0 +1,159 @@
+:root{
+    --midgreen:hsl(167, 90%, 24%);
+   --darkgreen: hsl(186, 21%, 26%);
+   --text: hsl(97, 13%, 80%);
+   --lightgreen: hsl(133, 18%, 59%);
+   --darkestgreen: hsl(201, 33%, 27%);
+}
+
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow',
+     Arial, sans-serif;
+ 
+}
+
+
+body{
+    background-color: var(--text);
+}
+
+
+
+
+.header{
+background-color: var(--darkestgreen);
+color: var(--text);
+padding: .5em;
+
+}
+
+.title{
+margin-left: 1em;
+margin-right: 1em;
+margin-top: 1em;
+;
+
+
+}
+
+
+
+.nav ul{
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav ul li{
+    margin: 1em;
+    
+}
+
+.about {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 1em;
+    padding: 1em;
+    background-color: var(--lightgreen);
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.hero{
+    background-image: url("../images/Portfolio_Image.jpg");
+    size: 25em;
+}
+
+
+
+.about p {
+margin-left:4em;
+}
+
+
+
+
+
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: dotted;
+    margin: 1em;
+ 
+}
+
+.projects a:link {
+    text-decoration: none; /* Makes the link not have an underline*/
+}
+
+
+
+    .project1 {
+        margin: 1em;
+        border-color: var(--darkestgreen);
+        border: solid;
+        /*border-radius: 10px ;*/
+        background-image: url("../images/Bird\ arrow\ in\ flight.png"); 
+        background-size: cover;
+        background-position: center;       
+        width: 20em;
+        height: 10em;
+        transform: scale(1);
+        transition: transform 2s;
+        color: rgb(10, 10, 10);
+        flex: 2 0 200em;
+    }
+    
+
+    .projects-txtbx{
+        margin: .9em;
+         /* border-radius: 3px;*/
+        width: 27%;
+        background:linear-gradient(11800deg,var(--darkestgreen), var(--darkgreen),var(--darkestgreen) );
+    }
+
+
+
+    .project1 h1 {
+        margin: .5em;
+        color: var(--text);
+        c
+    }
+
+
+
+
+    .project1:hover {
+    transform: scale(1.05);
+    transition: transform 1s 
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+.project2{
+    border: dotted;
+    margin: 1em;
+    width: 10em;
+    }
+
+ .project3{
+        border: dotted;
+        margin: 1em;
+        width: 10em;
+        }
