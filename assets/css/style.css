@@ -4,6 +4,7 @@
    --text: hsl(97, 13%, 80%);
    --lightgreen: hsl(133, 18%, 59%);
    --darkestgreen: hsl(201, 33%, 27%);
+   --bluegreen: hsl(201, 64%, 29%);
 }
 
 
@@ -25,8 +26,10 @@ body{
 background-color: var(--darkestgreen);
 color: var(--text);
 padding: .5em;
-
+margin-left: 2%;
+margin-right: 2%;
 }
+
 
 .title{
 margin-left: 1em;
@@ -58,20 +61,23 @@ margin-top: 1em;
     align-content: center;
     margin-top: 1em;
     padding: 1em;
-    background-color: var(--lightgreen);
-    margin-left: 15%;
-    margin-right: 15%;
+    background-color: var(--darkestgreen);
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .hero{
     background-image: url("../images/Portfolio_Image.jpg");
-    size: 25em;
+    width: 30em;
+    height: 30em;
+    background-position: center;
+    border-color: var(--darkestgreen);
+    background-size: cover;
 }
-
 
 
 .about p {
-margin-left:4em;
+    margin-left:4em;
 }
 
 
@@ -80,58 +86,58 @@ margin-left:4em;
 
 
 
-.projects {
+.container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    border: dotted;
     margin: 1em;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: var(--darkestgreen);
+    
  
 }
 
-.projects a:link {
+.container a:link {
     text-decoration: none; /* Makes the link not have an underline*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--text);
 }
+
+
 
 
 
     .project1 {
+        /* A flex-basis of 200px sets the starting width */
+        /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+        flex: 2 0 350px;
+        height: 18em;
         margin: 1em;
         border-color: var(--darkestgreen);
-        border: solid;
-        /*border-radius: 10px ;*/
-        background-image: url("../images/Bird\ arrow\ in\ flight.png"); 
-        background-size: cover;
-        background-position: center;       
-        width: 20em;
-        height: 10em;
         transform: scale(1);
-        transition: transform 2s;
-        color: rgb(10, 10, 10);
-        flex: 2 0 200em;
-    }
-    
-
-    .projects-txtbx{
-        margin: .9em;
-         /* border-radius: 3px;*/
-        width: 27%;
-        background:linear-gradient(11800deg,var(--darkestgreen), var(--darkgreen),var(--darkestgreen) );
-    }
-
+        transition: transform .5s;
+        background-image: url("../images/Bird\ arrow\ in\ flight.png"); 
+        background-size:cover;
+        background-position: center;  
+        
+        
+      }
 
 
     .project1 h1 {
-        margin: .5em;
         color: var(--text);
-        c
+        font-family: monospace;
+        font-size:x-large;
+        
+        
     }
 
-
-
-
     .project1:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: transform 1s 
 }
   
@@ -147,13 +153,62 @@ margin-left:4em;
 
 
 .project2{
-    border: dotted;
+    flex: 1 0 100px;
+    height: 9em;
+    border-style: solid;
+    border-width: 1px;
     margin: 1em;
-    width: 10em;
+    border-color: var(--darkestgreen);
+    transform: scale(1);
+    transition: transform .5s;
+    background-image: url("../images/bulbasupercloseup.png"); 
+    background-size:cover;
+    background-position: center;
+  }
+
+
+    .project2 h1 {
+        color: var(--darkestgreen);
+        font-family:monospace;
+        font-weight:bold;
     }
 
+
+    .project2:hover {
+        transform: scale(1.03);
+        transition: transform 1s 
+    }
+      
+    
+    
+
+
+
+
  .project3{
-        border: dotted;
-        margin: 1em;
-        width: 10em;
-        }
+    
+    flex: 1 1 100px;
+    height: 9em;
+    border-style: solid;
+    border-width: 1px;
+    margin: 1em;
+    border-color: var(--darkestgreen);
+    transform: scale(1);
+    transition: transform .5s;
+    background-image: url("../images/horiseon.png"); 
+    background-size:cover;
+    background-position: center;  
+
+ }
+
+ .project3 h1 {
+    color: var(--darkestgreen);
+    font-family:monospace;
+    font-weight:bold;
+}
+
+
+ .project3:hover {
+    transform: scale(1.03);
+    transition: transform 1s 
+}
