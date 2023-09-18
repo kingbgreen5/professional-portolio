@@ -50,8 +50,17 @@ margin-top: 1em;
 
 .nav ul li{
     margin: 1em;
+    text-decoration: none;
+    
     
 }
+.nav a:link {
+    text-decoration: none;
+    color: var(--text);
+}
+
+
+
 
 .about {
     display: flex;
@@ -84,6 +93,18 @@ margin-top: 1em;
 
 
 
+.work{
+    margin-left:7%;
+    margin-right: 7%;
+    margin-top: 7%;
+    background-color: var(--darkestgreen);
+    color: var(--text);
+}
+
+.work h1 {
+margin: 2%;
+font-size:
+}
 
 
 .container {
@@ -105,25 +126,24 @@ margin-top: 1em;
     border-style: solid;
     border-width: 3px;
     border-color: var(--text);
+    font-family: monospace;
 }
 
 
-
-
+                                                                  /*CARD 1*/
 
     .project1 {
         /* A flex-basis of 200px sets the starting width */
         /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
         flex: 2 0 350px;
-        height: 18em;
+        height: 25em;
         margin: 1em;
-        border-color: var(--darkestgreen);
+        border-color: var(--text);
         transform: scale(1);
         transition: transform .5s;
-        background-image: url("../images/Bird\ arrow\ in\ flight.png"); 
+        background-image: url("../images/BOWGAME2.png"); 
         background-size:cover;
         background-position: center;  
-        
         
       }
 
@@ -132,39 +152,45 @@ margin-top: 1em;
         color: var(--text);
         font-family: monospace;
         font-size:x-large;
-        
-        
+    
     }
 
     .project1:hover {
-    transform: scale(1.03);
-    transition: transform 1s 
+        transform: scale(1.008);
+        transition: transform 1s 
 }
   
+    #css-tooltip1:hover::after {
+        content:"BowGame";
+        position: absolute;
+        left: 1%;
+        bottom: 1%;
+        min-width: 150px;
+        border: 1px #aaaaaa solid;
+        background-color:var(--text);
+        padding: 12px;
+        color: var(--darkestgreen);
+        font-size: 200%;
+        z-index: 1;
+        opacity: 70%;
+    }
+  
 
+                                                                  /*CARD 2*/
 
-
-
-
-
-
-
-
-
-
-.project2{
-    flex: 1 0 100px;
-    height: 9em;
-    border-style: solid;
-    border-width: 1px;
-    margin: 1em;
-    border-color: var(--darkestgreen);
-    transform: scale(1);
-    transition: transform .5s;
-    background-image: url("../images/bulbasupercloseup.png"); 
-    background-size:cover;
-    background-position: center;
-  }
+    .project2{
+        flex: 1 0 100px;
+        height: 9em;
+        border-style: solid;
+        border-width: 1px;
+        margin: 1em;
+        border-color: var(--darkestgreen);
+        transform: scale(1);
+        transition: transform .5s;
+        background-image: url("../images/bulbasupercloseup.copy.png"); 
+        background-size:cover;
+        background-position: center;
+    }
 
 
     .project2 h1 {
@@ -180,14 +206,128 @@ margin-top: 1em;
     }
       
     
+    #css-tooltip2:hover::after {
+        content:"HTML Bulbasaur";
+        position: absolute;
+        left: 1%;
+        bottom: 1%;
+        min-width: 50px;
+        border: 1px #aaaaaa solid;
+        background-color:var(--text);
+        padding: 12px;
+        color: var(--darkestgreen);
+        font-size: 100%;
+        z-index: 1;
+        opacity: 80%;
+        font-family:monospace;
+        font-weight:bold;
+      }
+      
+
+
+                                                                   /*CARD 3*/
+
+    .project3{
+        
+        flex: 1 1 100px;
+        height: 9em;
+        border-style: solid;
+        border-width: 1px;
+        margin: 1em;
+        border-color: var(--darkestgreen);
+        transform: scale(1);
+        transition: transform .5s;
+        background-image: url("../images/horiseon1.png"); 
+        background-size:cover;
+        background-position: center;  
     
 
+     }
 
+    .project3 h1 {
+        color: var(--text);
+        font-family:monospace;
+        font-weight:bold;
+    }
 
-
- .project3{
+    .project3:hover {
+        transform: scale(1.03);
+        transition: transform 1s 
+    }
     
-    flex: 1 1 100px;
+    #css-tooltip3:hover::after {
+        content:"Horiseon Refactor";
+        position: absolute;
+        left: 1%;
+        bottom: 1%;
+        min-width: 50px;
+        border: 1px #aaaaaa solid;
+        background-color:var(--text);
+        padding: 12px;
+        color: var(--darkestgreen);
+        font-size: 100%;
+        z-index: 1;
+        opacity: 80%;
+        font-family:monospace;
+        font-weight:bold;
+    }
+
+
+                                                                         /*CARD 4*/
+
+    .project4 {
+        
+        flex: 1 1 100px;
+        height: 9em;
+        border-style: solid;
+        border-width: 1px;
+        margin: 1em;
+        border-color: var(--text);
+        transform: scale(1);
+        transition: transform .5s;
+        background-color: var(--bluegreen);
+        background-image: url("../images/prework.png"); 
+        background-size:cover;
+        background-position: center;  
+
+    }
+
+    .project4 h1 {
+        color: var(--text);
+        font-family:monospace;
+        font-weight:bold;
+    }
+
+    .project4:hover {
+        transform: scale(1.03);
+        transition: transform 1s 
+    }
+
+    #css-tooltip4:hover::after {
+        content:"Pre-work Study Guide";
+        position: absolute;
+        left: 1%;
+        bottom: 1%;
+        min-width: 50px;
+        border: 1px #aaaaaa solid;
+        background-color:var(--text);
+        padding: 12px;
+        color: var(--darkestgreen);
+        font-size: 100%;
+        z-index: 1;
+        opacity: 80%;
+        font-family:monospace;
+        font-weight:bold;
+    }
+
+
+                                                                    /*CARD 5*/
+
+
+
+
+ .project5{
+    flex: 1 0 100px;
     height: 9em;
     border-style: solid;
     border-width: 1px;
@@ -195,20 +335,70 @@ margin-top: 1em;
     border-color: var(--darkestgreen);
     transform: scale(1);
     transition: transform .5s;
-    background-image: url("../images/horiseon.png"); 
+    background-image: url("../images/yulgurush.png"); 
     background-size:cover;
-    background-position: center;  
-
- }
-
- .project3 h1 {
-    color: var(--darkestgreen);
-    font-family:monospace;
-    font-weight:bold;
-}
+    background-position: center;
+  }
 
 
- .project3:hover {
-    transform: scale(1.03);
-    transition: transform 1s 
-}
+
+
+
+    .project5 h1 {
+        color: var(--darkestgreen);
+        font-family:monospace;
+        font-weight:bold;
+    }
+
+
+    .project5:hover {
+        transform: scale(1.03);
+        transition: transform 1s 
+    }
+      
+    
+    #css-tooltip5:hover::after {
+        content:"Yulgurush";
+        position: absolute;
+        left: 1%;
+        bottom: 1%;
+        min-width: 50px;
+        border: 1px #aaaaaa solid;
+        background-color:var(--text);
+        padding: 12px;
+        color: var(--darkestgreen);
+        font-size: 100%;
+        z-index: 1;
+        opacity: 80%;
+        font-family:monospace;
+        font-weight:bold;
+      }
+      
+
+
+
+
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:7%;
+    margin-right: 7%;
+    margin-top: 20%;
+ 
+    margin-bottom: 100em;
+    background-color: var(--darkestgreen);
+    color: var(--text);
+    border: solid;
+    
+  }
+  footer a:link{
+    text-decoration: none;
+    color: var(--text  );
+    
+  }
+
+  
+
+
