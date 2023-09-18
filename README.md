@@ -16,7 +16,7 @@ N/A
 Click The links at the Navbar at the top to move around the site. Click the pictures in the "Work" Section to veiw deployed applications. 
 
 
-![screenshot of the Portfolios webpage](image.png)
+![Alt text](<assets/images/README Screenshot.png>)
 =======
 
 ## Credits
