@@ -11,9 +11,12 @@
 *{
     font-family:'Franklin Gothic Medium', 'Arial Narrow',
      Arial, sans-serif;
+     
  
 }
-
+* h1{
+    font-size: 2em;
+}
 
 body{
     background-color: var(--text);
@@ -26,12 +29,12 @@ body{
 background-color: var(--darkestgreen);
 color: var(--text);
 padding: .5em;
-margin-left: 2%;
-margin-right: 2%;
+margin-left: 5%;
+margin-right: 5%;
 }
 
 
-.title{
+.header h1{
 margin-left: 1em;
 margin-right: 1em;
 margin-top: 1em;
@@ -40,28 +43,31 @@ margin-top: 1em;
 
 }
 
-
+                                                                  /*NAV*/
 
 .nav ul{
     display: flex;
 	flex-wrap: wrap;
     justify-content: flex-end;
+    font-size: 1.5em;
 }
 
 .nav ul li{
     margin: 1em;
     text-decoration: none;
-    
-    
 }
 .nav a:link {
     text-decoration: none;
     color: var(--text);
 }
+.nav a:visited {
+    color: var(--text);
+  }
 
 
 
 
+                                                                  /*ABOUT*/
 .about {
     display: flex;
 	flex-wrap: wrap;
@@ -71,8 +77,8 @@ margin-top: 1em;
     margin-top: 1em;
     padding: 1em;
     background-color: var(--darkestgreen);
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .hero{
@@ -86,36 +92,41 @@ margin-top: 1em;
 
 
 .about p {
-    margin-left:4em;
+    margin-left:20%;
+    margin-right: 20%;
+    margin-top: 1em;
+    color: var(--text);
+    font-size: 1.1em;
+ 
+
 }
 
 
 
-
+                                                                  /*WORK HEADER 1*/
 
 .work{
     margin-left:7%;
     margin-right: 7%;
-    margin-top: 7%;
+    margin-top: 5%;
     background-color: var(--darkestgreen);
     color: var(--text);
+    height: 5em;
+    align-items: center;
 }
 
 .work h1 {
-margin: 2%;
-font-size:
+margin: 3%;
 }
 
-
+                                                                  /*CONTAINER 1*/
 .container {
     display: flex;
     flex-wrap: wrap;
     margin: 1em;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: var(--darkestgreen);
-    
- 
 }
 
 .container a:link {
@@ -132,10 +143,8 @@ font-size:
 
                                                                   /*CARD 1*/
 
-    .project1 {
-        /* A flex-basis of 200px sets the starting width */
-        /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-        flex: 2 0 350px;
+    .card1 {
+        flex: 2 0 200px;
         height: 25em;
         margin: 1em;
         border-color: var(--text);
@@ -144,22 +153,21 @@ font-size:
         background-image: url("../images/BOWGAME2.png"); 
         background-size:cover;
         background-position: center;  
-        
+        title: ;
       }
 
 
-    .project1 h1 {
+    .card1 h1 {
         color: var(--text);
-        font-family: monospace;
         font-size:x-large;
     
     }
 
-    .project1:hover {
+    .card1:hover {
         transform: scale(1.008);
         transition: transform 1s 
 }
-  
+
     #css-tooltip1:hover::after {
         content:"BowGame";
         position: absolute;
@@ -175,12 +183,11 @@ font-size:
         opacity: 70%;
     }
   
-
                                                                   /*CARD 2*/
 
-    .project2{
+    .card2{
         flex: 1 0 100px;
-        height: 9em;
+        height: 15em;
         border-style: solid;
         border-width: 1px;
         margin: 1em;
@@ -192,20 +199,17 @@ font-size:
         background-position: center;
     }
 
-
-    .project2 h1 {
+    .card2 h1 {
         color: var(--darkestgreen);
         font-family:monospace;
         font-weight:bold;
     }
 
-
-    .project2:hover {
+    .card2:hover {
         transform: scale(1.03);
         transition: transform 1s 
     }
       
-    
     #css-tooltip2:hover::after {
         content:"HTML Bulbasaur";
         position: absolute;
@@ -223,14 +227,12 @@ font-size:
         font-weight:bold;
       }
       
-
-
                                                                    /*CARD 3*/
 
-    .project3{
+    .card3 {
         
         flex: 1 1 100px;
-        height: 9em;
+        height: 15em;
         border-style: solid;
         border-width: 1px;
         margin: 1em;
@@ -240,17 +242,15 @@ font-size:
         background-image: url("../images/horiseon1.png"); 
         background-size:cover;
         background-position: center;  
-    
-
      }
 
-    .project3 h1 {
+    .card3 h1 {
         color: var(--text);
         font-family:monospace;
         font-weight:bold;
     }
 
-    .project3:hover {
+    .card3:hover {
         transform: scale(1.03);
         transition: transform 1s 
     }
@@ -272,13 +272,12 @@ font-size:
         font-weight:bold;
     }
 
-
                                                                          /*CARD 4*/
 
-    .project4 {
+    .card4 {
         
         flex: 1 1 100px;
-        height: 9em;
+        height:15em;
         border-style: solid;
         border-width: 1px;
         margin: 1em;
@@ -292,13 +291,13 @@ font-size:
 
     }
 
-    .project4 h1 {
+    .card4 h1 {
         color: var(--text);
         font-family:monospace;
         font-weight:bold;
     }
 
-    .project4:hover {
+    .card4:hover {
         transform: scale(1.03);
         transition: transform 1s 
     }
@@ -319,44 +318,34 @@ font-size:
         font-family:monospace;
         font-weight:bold;
     }
-
-
                                                                     /*CARD 5*/
 
+    .card5{
+        flex: 1 0 100px;
+        height: 15em;
+        border-style: solid;
+        border-width: 1px;
+        margin: 1em;
+        border-color: var(--darkestgreen);
+        transform: scale(1);
+        transition: transform .5s;
+        background-image: url("../images/yulgurush.png"); 
+        background-size:cover;
+        background-position: center;
 
-
-
- .project5{
-    flex: 1 0 100px;
-    height: 9em;
-    border-style: solid;
-    border-width: 1px;
-    margin: 1em;
-    border-color: var(--darkestgreen);
-    transform: scale(1);
-    transition: transform .5s;
-    background-image: url("../images/yulgurush.png"); 
-    background-size:cover;
-    background-position: center;
   }
 
-
-
-
-
-    .project5 h1 {
+    .card5 h1 {
         color: var(--darkestgreen);
         font-family:monospace;
         font-weight:bold;
     }
 
-
-    .project5:hover {
+    .card5:hover {
         transform: scale(1.03);
         transition: transform 1s 
     }
       
-    
     #css-tooltip5:hover::after {
         content:"Yulgurush";
         position: absolute;
@@ -375,30 +364,40 @@ font-size:
       }
       
 
+                                                                  /*FOOTER*/
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-left:7%;
+        margin-right: 7%;
+        margin-top: 5%;
+        background-color: var(--darkestgreen);
+        color: var(--text);
+        border: solid;
+        height: 5em;
+        }
 
-
-
-  footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-left:7%;
-    margin-right: 7%;
-    margin-top: 20%;
- 
-    margin-bottom: 100em;
-    background-color: var(--darkestgreen);
-    color: var(--text);
-    border: solid;
+    footer h1 {
+    margin-left: 2.2%;
+    }
     
-  }
-  footer a:link{
-    text-decoration: none;
-    color: var(--text  );
-    
-  }
+    footer h2{
+        margin: 2%;
+    }
+        
+    footer a:link { 
+        text-decoration: none;
+        color: var(--text  );
+        margin: 2%;
+       font-weight: bold;
 
-  
+        
+    }
+
+    footer a:visited {
+        color: var(--text);
+    }
 
 
