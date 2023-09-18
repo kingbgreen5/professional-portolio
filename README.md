@@ -20,8 +20,13 @@ Click The links at the Navbar at the top to move around the site. Click the pict
 =======
 
 ## Credits
-Starter code provided by 
-Justin Gottschalk
+Starter code/boilerplate provided by Justin Gottschalk.
+
+Smooth Scrolling and target="_blank" functionality from Abe Alberts.
+
+Transform Scale from Thoughtlab.com
+
+Various references from W3Schools.com
 
 ## License
 MIT
